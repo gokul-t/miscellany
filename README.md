@@ -1,8 +1,6 @@
 # miscellany
+
 ## PowerToys KeyRemaps
 
 C:\Users\${username}\AppData\Local\Microsoft\PowerToys\Keyboard Manager\default.json
 
-```json
-{"remapKeys":{"inProcess":[{"originalKeys":"20","newRemapKeys":"17"}]},"remapKeysToText":{"inProcess":[]},"remapShortcuts":{"global":[{"originalKeys":"18;8","exactMatch":false,"operationType":0,"newRemapKeys":"17;8"},{"originalKeys":"18;46","exactMatch":false,"operationType":0,"newRemapKeys":"17;46"},{"originalKeys":"18;65","exactMatch":false,"operationType":0,"newRemapKeys":"17;65"},{"originalKeys":"18;67","exactMatch":false,"operationType":0,"newRemapKeys":"17;67"},{"originalKeys":"18;69","exactMatch":false,"operationType":0,"newRemapKeys":"17;69"},{"originalKeys":"18;70","exactMatch":false,"operationType":0,"newRemapKeys":"17;70"},{"originalKeys":"18;83","exactMatch":false,"operationType":0,"newRemapKeys":"17;83"},{"originalKeys":"18;86","exactMatch":false,"operationType":0,"newRemapKeys":"17;86"},{"originalKeys":"18;88","exactMatch":false,"operationType":0,"newRemapKeys":"17;88"},{"originalKeys":"18;89","exactMatch":false,"operationType":0,"newRemapKeys":"17;89"},{"originalKeys":"18;90","exactMatch":false,"operationType":0,"newRemapKeys":"17;90"},{"originalKeys":"18;16;86","exactMatch":false,"operationType":0,"newRemapKeys":"17;16;86"}],"appSpecific":[]},"remapShortcutsToText":{"global":[],"appSpecific":[]}}
-```
