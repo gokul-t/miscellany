@@ -7,6 +7,13 @@
 ln -s ./linux/.vimrc ~/.vimrc;
 ```
 
+## Mac
+
+- IdeaVim
+```sh
+ln -s ./mac/.ideavimrc ~/.ideavimrc
+```
+
 ## Windows
 
 - PowerToys KeyRemaps
