@@ -4,7 +4,7 @@
 
 - Vim
 ```sh
-ln -s ~/Projects/repos/gokultmail/miscellany/linux/.vimrc ~/.vimrc;
+ln -s ./linux/.vimrc ~/.vimrc;
 ```
 
 ## Windows
