@@ -9,7 +9,8 @@ ln -s ./linux/.vimrc ~/.vimrc;
 
 - Code
 ```sh
-ln -s ./linux/code/settings.json ~/.config/Code/User/settings.json
+cp ./linux/code/settings.json ~/.config/Code/User/settings.json;
+cp ~/.config/Code/User/settings.json ./linux/code/settings.json;
 ```
 
 ## Mac

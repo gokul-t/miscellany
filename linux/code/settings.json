@@ -85,5 +85,6 @@
   /* ============================
      Bells (disable)
      ============================ */
-  "editor.accessibilitySupport": "off"
+    "workbench.preferredDarkColorTheme": "Default High Contrast",
+    "window.autoDetectColorScheme": true
 }
