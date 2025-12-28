@@ -1,6 +1,5 @@
 set nocompatible
 let mapleader=' ' "use space for leader key
-filetype off "required for Vundle
 " Cursor behaviour
 autocmd InsertEnter,InsertLeave * set cul!
 " General visual look of Vim
@@ -10,6 +9,7 @@ set visualbell
 set laststatus=2
 set showmode
 set splitbelow splitright
+set clipboard=unnamedplus
 " Text searching options
 set incsearch
 set ignorecase
@@ -49,4 +49,7 @@ inoremap ` ``<ESC>hli
 " Don't exit visual mode after indenting
 vnoremap > >gv
 vnoremap < <gv
+
+filetype on
+filetype plugin on "required
 filetype plugin indent on "required

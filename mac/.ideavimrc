@@ -1,0 +1,127 @@
+" =========================================================
+" IdeaVim configuration file
+" Uses Vim-style commands inside IntelliJ-based IDEs
+" Docs:
+"   https://jb.gg/ideavim
+"   https://jb.gg/ideavimrc
+" =========================================================
+
+" -------------------------
+" Leader key
+" -------------------------
+let mapleader = " "
+
+" -------------------------
+" Basic editor behavior
+" -------------------------
+syntax on
+set scrolloff=5          " Keep context lines around cursor
+set number                " Line numbers
+set relativenumber        " Relative line numbers
+set showmode              " Show current mode
+set showcmd               " Show partial commands
+set showmatch             " Highlight matching brackets
+set wildmenu              " Command completion menu
+
+" -------------------------
+" Indentation
+" -------------------------
+set autoindent
+filetype indent on
+
+" -------------------------
+" Search behavior
+" -------------------------
+set ignorecase            " Case-insensitive search
+set smartcase             " Case-sensitive if uppercase used
+set incsearch             " Incremental search
+set hlsearch              " Highlight search matches
+
+" Clear search highlight with Esc
+nnoremap <Esc> :nohlsearch<CR>
+
+" -------------------------
+" Undo
+" -------------------------
+set noundofile             " Disable persistent undo (Idea manages undo)
+
+" -------------------------
+" Disable Ex mode
+" -------------------------
+nnoremap Q <nop>
+
+" =========================================================
+" Plugins (IdeaVim plugins)
+" =========================================================
+" Enable plugin support
+set surround
+set commentary
+set highlightedyank
+
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+
+" =========================================================
+" Window / split navigation
+" =========================================================
+" Move between splits
+nnoremap <leader>wh <C-w>h
+nnoremap <leader>wj <C-w>j
+nnoremap <leader>wk <C-w>k
+nnoremap <leader>wl <C-w>l
+
+" Manage splits
+nnoremap <leader>wv :vsplit<CR>
+nnoremap <leader>ws :split<CR>
+nnoremap <leader>wc :close<CR>
+
+" =========================================================
+" IntelliJ editor tabs
+" =========================================================
+nnoremap <leader>tn :action NextTab<CR>
+nnoremap <leader>tp :action PreviousTab<CR>
+
+nnoremap <leader>t1 :action GoToTab1<CR>
+nnoremap <leader>t2 :action GoToTab2<CR>
+nnoremap <leader>t3 :action GoToTab3<CR>
+
+" =========================================================
+" Navigation / Search
+" =========================================================
+nnoremap <leader>f  :action SearchEverywhere<CR>
+nnoremap <leader>ff :action GotoFile<CR>
+nnoremap <leader>fs :action GotoSymbol<CR>
+nnoremap <leader>fr :action RecentFiles<CR>
+
+" =========================================================
+" Refactoring / Run / Debug
+" =========================================================
+nnoremap <leader>rn :action RenameElement<CR>
+nnoremap <leader>ra :action Refactorings.QuickListPopupAction<CR>
+
+nnoremap <leader>r  :action RunClass<CR>
+nnoremap <leader>t  :action RunContextTest<CR>
+nnoremap <leader>R  :action Rerun<CR>
+nnoremap <leader>d  :action DebugClass<CR>
+
+" =========================================================
+" Tool windows
+" =========================================================
+nnoremap <leader>e  :action ActivateProjectToolWindow<CR>
+nnoremap <leader>tt :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>g  :action ActivateVersionControlToolWindow<CR>
+nnoremap <leader>m  :action ActivateMessagesToolWindow<CR>
+
+" =========================================================
+" Code helpers
+" =========================================================
+nnoremap <leader>cf :action ReformatCode<CR>
+nnoremap <leader>co :action OptimizeImports<CR>
+nnoremap <leader>ca :action ShowIntentionActions<CR>
+
+" =========================================================
+" Optional: let IntelliJ handle some behaviors
+" =========================================================
+" set ideajoin
+" set noideaput
